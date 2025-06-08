@@ -1,0 +1,11 @@
+CREATE TABLE osaka_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    infix VARCHAR(50),
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    is_admin TINYINT(1) DEFAULT 0,
+    contract_id BIGINT UNSIGNED NOT NULL,  -- Matcht met contract.id
+    FOREIGN KEY (contract_id) REFERENCES contract(id)
+);

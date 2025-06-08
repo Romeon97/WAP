@@ -1,0 +1,4 @@
+ALTER TABLE original_measurement
+ADD COLUMN status ENUM('active', 'resolved') DEFAULT 'active',
+ADD COLUMN note TEXT NULL;
+ALTER TABLE original_measurement ADD COLUMN resolved_at DATETIME NULL;

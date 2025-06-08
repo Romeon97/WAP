@@ -1,0 +1,10 @@
+DB::table('contract_users')->insert([
+    'useridentifier' => 'demo123',
+    'name' => 'Demo Klant',
+    'email' => 'demo@example.com',
+    'password' => Hash::make('geheim123'),
+    'role' => 'klant',
+    'contractID' => 6,
+    'created_at' => now(),
+    'updated_at' => now(),
+]);

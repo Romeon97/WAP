@@ -1,0 +1,27 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7fa;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 2rem;
+}
+
+.dataButton {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    background: #0055a5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0 0 0 / 10%);
+}
+
+.dataButton:hover {
+    background: #004282;
+}

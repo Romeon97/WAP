@@ -1,0 +1,70 @@
+INSERT INTO `companies` 
+VALUES 
+(19, 'Osaka', 'Osaka', 'osakastraat', '69', NULL, '69420', 'JP', 'osaka@info.com');
+
+INSERT INTO `contract` 
+VALUES 
+(7, 'OSAK1', 19, 'Contract Osaka Universiteit', '2025-02-01', NULL, 'https://www.osaka-u.ac.jp/en', NOW(), NOW());
+
+INSERT INTO `query` 
+VALUES 
+(1, 7, 'alle stations europa en japan', NOW(), NOW());
+
+INSERT INTO `criterium_group` 
+VALUES 
+(4, 2, 1, 1, 1, NOW(), NOW());
+
+INSERT INTO criterium
+
+VALUES
+  (11, 4, 2, NULL, 'AL', NULL, 2, 1, NOW(), NOW()),
+  (12, 4, 2, NULL, 'AD', NULL, 2, 1, NOW(), NOW()),
+  (13, 4, 2, NULL, 'AM', NULL, 2, 1, NOW(), NOW()),
+  (14, 4, 2, NULL, 'AT', NULL, 2, 1, NOW(), NOW()),
+  (15, 4, 2, NULL, 'AZ', NULL, 2, 1, NOW(), NOW()),
+  (16, 4, 2, NULL, 'BA', NULL, 2, 1, NOW(), NOW()),
+  (17, 4, 2, NULL, 'BE', NULL, 2, 1, NOW(), NOW()),
+  (18, 4, 2, NULL, 'BG', NULL, 2, 1, NOW(), NOW()),
+  (19, 4, 2, NULL, 'BY', NULL, 2, 1, NOW(), NOW()),
+  (20, 4, 2, NULL, 'CH', NULL, 2, 1, NOW(), NOW()),
+  (21, 4, 2, NULL, 'CY', NULL, 2, 1, NOW(), NOW()),
+  (22, 4, 2, NULL, 'CZ', NULL, 2, 1, NOW(), NOW()),
+  (23, 4, 2, NULL, 'DE', NULL, 2, 1, NOW(), NOW()),
+  (24, 4, 2, NULL, 'DK', NULL, 2, 1, NOW(), NOW()),
+  (25, 4, 2, NULL, 'EE', NULL, 2, 1, NOW(), NOW()),
+  (26, 4, 2, NULL, 'ES', NULL, 2, 1, NOW(), NOW()),
+  (27, 4, 2, NULL, 'FI', NULL, 2, 1, NOW(), NOW()),
+  (28, 4, 2, NULL, 'FR', NULL, 2, 1, NOW(), NOW()),
+  (29, 4, 2, NULL, 'GB', NULL, 2, 1, NOW(), NOW()),
+  (30, 4, 2, NULL, 'GE', NULL, 2, 1, NOW(), NOW()),
+  (31, 4, 2, NULL, 'GR', NULL, 2, 1, NOW(), NOW()),
+  (32, 4, 2, NULL, 'HR', NULL, 2, 1, NOW(), NOW()),
+  (33, 4, 2, NULL, 'HU', NULL, 2, 1, NOW(), NOW()),
+  (34, 4, 2, NULL, 'IE', NULL, 2, 1, NOW(), NOW()),
+  (35, 4, 2, NULL, 'IS', NULL, 2, 1, NOW(), NOW()),
+  (36, 4, 2, NULL, 'IT', NULL, 2, 1, NOW(), NOW()),
+  (37, 4, 2, NULL, 'LI', NULL, 2, 1, NOW(), NOW()),
+  (38, 4, 2, NULL, 'LT', NULL, 2, 1, NOW(), NOW()),
+  (39, 4, 2, NULL, 'LU', NULL, 2, 1, NOW(), NOW()),
+  (40, 4, 2, NULL, 'LV', NULL, 2, 1, NOW(), NOW()),
+  (41, 4, 2, NULL, 'MC', NULL, 2, 1, NOW(), NOW()),
+  (42, 4, 2, NULL, 'MD', NULL, 2, 1, NOW(), NOW()),
+  (43, 4, 2, NULL, 'ME', NULL, 2, 1, NOW(), NOW()),
+  (44, 4, 2, NULL, 'MK', NULL, 2, 1, NOW(), NOW()),
+  (45, 4, 2, NULL, 'MT', NULL, 2, 1, NOW(), NOW()),
+  (46, 4, 2, NULL, 'NL', NULL, 2, 1, NOW(), NOW()),
+  (47, 4, 2, NULL, 'NO', NULL, 2, 1, NOW(), NOW()),
+  (48, 4, 2, NULL, 'PL', NULL, 2, 1, NOW(), NOW()),
+  (49, 4, 2, NULL, 'PT', NULL, 2, 1, NOW(), NOW()),
+  (50, 4, 2, NULL, 'RO', NULL, 2, 1, NOW(), NOW()),
+  (51, 4, 2, NULL, 'RS', NULL, 2, 1, NOW(), NOW()),
+  (52, 4, 2, NULL, 'RU', NULL, 2, 1, NOW(), NOW()),
+  (53, 4, 2, NULL, 'SE', NULL, 2, 1, NOW(), NOW()),
+  (54, 4, 2, NULL, 'SI', NULL, 2, 1, NOW(), NOW()),
+  (55, 4, 2, NULL, 'SK', NULL, 2, 1, NOW(), NOW()),
+  (56, 4, 2, NULL, 'SM', NULL, 2, 1, NOW(), NOW()),
+  (57, 4, 2, NULL, 'TR', NULL, 2, 1, NOW(), NOW()),
+  (58, 4, 2, NULL, 'UA', NULL, 2, 1, NOW(), NOW()),
+  (59, 4, 2, NULL, 'VA', NULL, 2, 1, NOW(), NOW()),
+  (60, 4, 2, NULL, 'XK', NULL, 2, 1, NOW(), NOW()),
+  (61, 4, 2, NULL, 'JP', NULL, 2, 1, NOW(), NOW());
