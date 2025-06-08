@@ -22,6 +22,12 @@ const HomePage: React.FC = () => {
                 >
                     Wind&nbsp;data
                 </button>
+                <button
+                    className={styles.dataButton}
+                    onClick={() => handleNavigate("/nearest")}
+                >
+                    Dichtstbijzijnde&nbsp;station
+                </button>
             </div>
         </div>
     );

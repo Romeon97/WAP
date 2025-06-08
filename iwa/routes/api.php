@@ -38,6 +38,7 @@ Route::middleware([CheckSubscriptionToken::class])->group(function () {
 Route::get('/contracten/{identifier}/{queryID}', [ContractDataController::class, 'getQueryData']);
 Route::get('/contracten/{identifier}/{queryID}/stations', [ContractDataController::class, 'getStationsForQuery']);
 Route::get('/contracten/{identifier}/station/{name}', [ContractDataController::class, 'getStationDetails']);
+Route::get('/contracten/{identifier}/neareststation', [ContractDataController::class, 'getNearestStation']);
 
 //OSAKA AUTHENTICATIE
 Route::post('/login', [ApiAuthController::class, 'login']);
