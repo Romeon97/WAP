@@ -150,6 +150,42 @@ class ContractDataController extends Controller
         ]);
     }
 
+    public function getNearestStation($identifier, Request $request)
+    {
+        $location = $request->query('location');
+
+        if (!$location) {
+            return response()->json(['message' => 'Location parameter is required'], 400);
+        }
+
+        $contract = DB::table('contract')
+            ->where('identifier', $identifier)
+            ->first();
+
+        if (!$contract) {
+            return response()->json(['message' => 'Contract not found'], 404);
+        }
+
+        $nearest = DB::table('nearestlocation')
+            ->where('name', $location)
+            ->orWhere('name', 'like', '%' . $location . '%')
+            ->first();
+
+        if (!$nearest) {
+            return response()->json(['message' => 'Location not found'], 404);
+        }
+
+        $station = DB::table('station')
+            ->where('name', $nearest->station_name)
+            ->first();
+
+        return response()->json([
+            'contract_identifier' => $contract->identifier,
+            'station'             => $station,
+            'nearestLocation'     => $nearest,
+        ]);
+    }
+
     private function applyOneCriterium($builder, $crit, &$isFirstCriterium)
     {
         //Bepaal of het AND of OR is
