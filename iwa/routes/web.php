@@ -24,6 +24,9 @@ use App\Http\Controllers\ContractAuthController;
 //Homepagina route
 Route::get('/', fn() => view('index'))->name('index');
 
+// Public list of companies
+Route::get('/companies', [CompanyController::class, 'showAll'])->name('companies.list');
+
 //Auth
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'processLogin'])->name('login.process');

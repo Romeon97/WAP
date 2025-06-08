@@ -47,6 +47,9 @@ Route::post('/users', [UserController::class, 'store']);
 Route::put('/users/{id}', [UserController::class, 'update']);
 Route::delete('/users/{id}', [UserController::class, 'destroy']);
 
+// Companies for Osaka frontend
+Route::get('/companies', [CompanyController::class, 'apiIndex']);
+
 
 //DEBUG
 Route::get('/user', function (Request $request) {

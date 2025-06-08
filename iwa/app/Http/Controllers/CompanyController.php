@@ -23,6 +23,24 @@ class CompanyController extends Controller
         return view('companies.index', compact('companies', 'selectedCountry', 'countries'));
     }
 
+    /**
+     * Display a public list of all companies.
+     */
+    public function showAll()
+    {
+        $companies = Company::all();
+
+        return view('companies.list', compact('companies'));
+    }
+
+    /**
+     * Return all companies as JSON for the React frontend.
+     */
+    public function apiIndex()
+    {
+        return response()->json(Company::all());
+    }
+
 
     public function create()
     {
